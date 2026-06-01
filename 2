@@ -1,0 +1,8 @@
+print("\nЗадача 2. Покупка на 100 рублей:")
+print("Быки(10р)  Коровы(5р)  Телята(0.5р)")
+
+for bulls in range(0, 11):  # 10*10 = 100, максимум 10 быков
+    for cows in range(0, 21):  # 5*20 = 100, максимум 20 коров
+        calves = int((100 - 10 * bulls - 5 * cows) / 0.5)
+        if calves >= 0 and 10 * bulls + 5 * cows + 0.5 * calves == 100:
+            print(f"    {bulls}           {cows}           {calves}")
